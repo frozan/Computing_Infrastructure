@@ -3,38 +3,57 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
 header{
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(infra.jpg);
-  height: 100vh;
+  /* min-height: 400px; */
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Pic1.jpg);
+  /* background:url('Pic1.jpg') no-repeat 0 -400px; */
   background-size: cover;
   background-position: center;
-
+  height: 100vh;
+  text-align: center;
 }
 .main-nav{
   float: right;
   list-style: none;
-  margin-top: 30px;
+  margin-top: 50px;
+  color:#cccccc
 }
 .main-nav li{
-  display: inline-block;
+  /* display: inline-block; */
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
 }
 .main-nav li a{
-  color: white;
+  /* color: white;
   text-decoration: none;
   padding: 5px 20px;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 15px; */
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
 }
 .main-nav li.active a{
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  color:#e8491d;
+  font-weight:bold;
 }
 .main-nav li a:hover{
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  color:#cccccc;
+  font-weight:bold;
 }
-
-body{
+/* body{
   font-family: monospace;
-}
+} */
 .row {
   max-width: 1200px;
   margin: auto;
@@ -44,10 +63,11 @@ body{
   width: 1200px;
   margin-left: 0px;
   margin-right: 0px;
+  color:#cccccc
 
 }
 h1{
-  color: white;
+  color:#cccccc
   text-transform: uppercase;
   font-size: 70px;
   text-align: center;
@@ -57,18 +77,35 @@ h1{
   margin-top: 30px;
   margin-left: 440px;
 }
-.btn{
-  border: 1px solid white;
+/* .button input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+} */
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+  /* border: 1px solid white;
   padding: 10px 30px;
   color: white;
   text-decoration: none;
   margin-right: 5px;
   font-size: 13px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
+}
+#newsletter h2{
+  float:left;
 }
 .btn-one{
-  background-color: darkgrey;
-  font-family:"Roboto", sans-serif;
+  /* background-color: darkgrey;
+  font-family:"Roboto", sans-serif; */
+  height:25px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
 }
 .btn-two{
   font-family:"Roboto", sans-serif;
@@ -82,8 +119,14 @@ h1{
   font-size: 20px;
   padding-left: 20px;
   padding-right: 50px;
-  padding-top: 20px;
-  color: white;
+  padding-top: 30px;
+  color: #cccccc;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Pic3.JPG);
+  /* background:url('Pic3.JPG') no-repeat 0 -400px; */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* text-align: left; */
 
 }
 .intended1{
@@ -94,4 +137,11 @@ h1{
   font-size: 20px;
   color: white;
 
+}
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:blue;
+  background-color:light;
+  text-align: center;
 }
